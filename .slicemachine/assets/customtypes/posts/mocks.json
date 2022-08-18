@@ -1,0 +1,39 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "posts",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "giant",
+    "subtitle": "loose",
+    "author": "art",
+    "banner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+    },
+    "content": [
+      {
+        "heading": "drive",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Aliquip nisi nostrud minim adipisicing. Id exercitation deserunt laboris excepteur proident veniam ex consectetur voluptate est qui cillum minim sit cupidatat. Duis minim cupidatat elit qui non aliqua adipisicing in tempor eiusmod do.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

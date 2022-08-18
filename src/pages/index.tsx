@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import { PostCard } from '../components/PostCard';
 
 import { getPrismicClient } from '../services/prismic';
 
@@ -24,13 +25,25 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+export default function Home() {
+  // TODO
+
+  return (
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <button className={styles.button}>Carregar mais posts</button>
+      </div>
+    </main>
+  );
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient({});
 //   // const postsResponse = await prismic.getByType(TODO);
-
 //   // TODO
 // };

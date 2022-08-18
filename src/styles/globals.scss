@@ -5,3 +5,26 @@
 }
 
 // TODO
+
+:root {
+  --color-background: #1a1d23;
+  --color-highlight: #ff57b2;
+  --color-heading: #f8f8f8;
+  --color-info: #bbbbbb;
+  --color-body: #d7d7d7;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1d23;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
