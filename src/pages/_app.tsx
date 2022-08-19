@@ -1,9 +1,10 @@
 import { AppProps } from 'next/app';
-import '../styles/globals.scss';
 import Link from 'next/link';
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
 import { linkResolver, repositoryName } from '../../prismicio';
+import '../styles/globals.scss';
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       )}
     >
       <PrismicPreview repositoryName={repositoryName}>
+        <Header />
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>

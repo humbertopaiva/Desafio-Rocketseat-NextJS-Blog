@@ -1,15 +1,16 @@
-// TODO
-
-:root {
-  --color-background: #1a1d23;
-  --color-highlight: #ff57b2;
-  --color-heading: #f8f8f8;
-  --color-info: #bbbbbb;
-  --color-body: #d7d7d7;
+.container {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 0 16px;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Inter', sans-serif;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 700px;
+  width: 100%;
 }

@@ -1,26 +1,10 @@
-.main {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  max-width: 1440px;
-  width: 100%;
-}
-
 .button {
   color: var(--color-highlight);
   background-color: transparent;
   border: none;
   font-weight: bold;
   font-size: 18px;
+  align-self: flex-start;
 
   &:hover {
     filter: brightness(0.9);
