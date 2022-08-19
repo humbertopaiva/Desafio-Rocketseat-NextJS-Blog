@@ -1,10 +1,10 @@
 import { GetStaticProps } from 'next';
 import { PostCard } from '../components/PostCard';
-import commonStyles from '../styles/common.module.scss';
-import styles from './home.module.scss';
 import * as prismic from '@prismicio/client';
 import sm from '../../sm.json';
 // import { getPrismicClient } from '../services/prismic';
+import commonStyles from '../styles/common.module.scss';
+import styles from './home.module.scss';
 
 interface Post {
   id?: string;
@@ -27,26 +27,27 @@ interface HomeProps {
 }
 
 export default function Home({ postsPagination }: HomeProps) {
-  console.log(postsPagination);
   return (
     <main className={commonStyles.container}>
-      <ul className={commonStyles.content}>
-        {postsPagination.results.map((post, index) => {
-          const { uid, first_publication_date, data } = post;
-          return (
-            <li key={index}>
-              <PostCard
-                uid={uid}
-                title={data.title}
-                subtitle={data.subtitle}
-                author={data.author}
-                first_publication_date={first_publication_date}
-              />
-            </li>
-          );
-        })}
+      <div className={commonStyles.content}>
+        <ul>
+          {postsPagination.results.map((post, index) => {
+            const { uid, first_publication_date, data } = post;
+            return (
+              <li key={index}>
+                <PostCard
+                  uid={uid}
+                  title={data.title}
+                  subtitle={data.subtitle}
+                  author={data.author}
+                  first_publication_date={first_publication_date}
+                />
+              </li>
+            );
+          })}
+        </ul>
         <button className={styles.button}>Carregar mais posts</button>
-      </ul>
+      </div>
     </main>
   );
 }

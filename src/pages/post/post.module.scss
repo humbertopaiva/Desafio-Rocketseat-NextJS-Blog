@@ -1,1 +1,15 @@
 // TODO
+.banner {
+  height: 400px;
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+}
