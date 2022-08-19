@@ -7,6 +7,7 @@ import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
+import { useRouter } from 'next/router';
 
 interface Post {
   first_publication_date: string | null;
@@ -31,7 +32,10 @@ interface PostProps {
 
 export default function Post({ post }: PostProps) {
   console.log(post);
+  const router = useRouter();
   // TODO
+
+  if (router.isFallback) return <h1>Carregando...</h1>;
 
   const { first_publication_date, data } = post;
 
@@ -60,7 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: 'blocking',
+    fallback: true,
   };
 };
 
