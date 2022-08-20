@@ -5,17 +5,17 @@
 }
 
 :root {
-  --highlight: #ff57b2;
-  --heading: #f8f8f8;
-  --background: #1a1d23;
-  --info: #bbbbbb;
-  --body: #d7d7d7;
-  --border: #282c34;
+  --color-highlight: #ff57b2;
+  --color-heading: #f8f8f8;
+  --color-background: #1a1d23;
+  --color-info: #bbbbbb;
+  --color-body: #d7d7d7;
+  --color-border: #282c34;
 }
 
 body {
-  background: var(--background);
-  color: var(--body);
+  background: var(--color-background);
+  color: var(--color-body);
 }
 
 @media (max-width: 1080px) {

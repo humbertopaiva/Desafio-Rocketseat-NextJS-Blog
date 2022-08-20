@@ -21,17 +21,15 @@
   }
 
   a {
-    color: var(--highlight);
+    color: var(--color-highlight);
   }
 
   strong {
     font-weight: 700;
-    color: var(--body);
+    color: var(--color-body);
   }
 
   ul {
-    padding-left: 1.5rem;
-
     li {
       margin: 0.5rem 0;
     }
@@ -43,7 +41,7 @@
 
   h1 {
     font-size: 3rem;
-    color: var(--heading);
+    color: var(--color-heading);
     margin-bottom: 1.5rem;
   }
 

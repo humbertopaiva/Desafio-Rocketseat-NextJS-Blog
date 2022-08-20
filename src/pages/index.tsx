@@ -4,7 +4,6 @@ import { FiCalendar, FiUser } from 'react-icons/fi';
 import { ptBR } from 'date-fns/locale';
 import { useState } from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
 import Link from 'next/link';
 import * as prismic from '@prismicio/client';
 import sm from '../../sm.json';
@@ -31,7 +30,6 @@ interface HomeProps {
 }
 
 export default function Home({ postsPagination }: HomeProps) {
-  console.log(postsPagination);
   const formattedPosts = postsPagination.results.map(post => ({
     ...post,
     first_publication_date: format(
@@ -110,10 +108,9 @@ export default function Home({ postsPagination }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const prismic = getPrismicClient({});
   const client = prismic.createClient(sm.apiEndpoint);
   const postsResponse = await client.getByType('posts', {
-    pageSize: 3,
+    pageSize: 2,
     orderings: {
       field: 'last_publication_date',
       direction: 'desc',
