@@ -1,35 +1,47 @@
 {
-  "id": "mock-doc-id",
-  "url": null,
+  "id": "2da30544-34e0-4538-b510-a005ed812c5f",
+  "uid": "ipsum-dignissimos-voluptas",
   "type": "posts",
-  "href": null,
-  "tags": [],
-  "first_publication_date": "1970-01-01T00:00:01+0000",
-  "last_publication_date": "1970-01-01T00:00:01+0000",
-  "slugs": [],
-  "linked_documents": [],
-  "lang": "en-us",
-  "alternate_languages": [],
   "data": {
-    "title": "giant",
-    "subtitle": "loose",
-    "author": "art",
+    "title": "leverage strategic e-business",
+    "subtitle": "incentivize B2C eyeballs",
+    "author": "streamline strategic solutions",
     "banner": {
       "dimensions": {
         "width": 900,
         "height": 500
       },
-      "alt": null,
+      "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
     },
     "content": [
       {
-        "heading": "drive",
+        "heading": "reintermediate one-to-one solutions",
         "body": [
           {
             "type": "paragraph",
-            "text": "Aliquip nisi nostrud minim adipisicing. Id exercitation deserunt laboris excepteur proident veniam ex consectetur voluptate est qui cillum minim sit cupidatat. Duis minim cupidatat elit qui non aliqua adipisicing in tempor eiusmod do.",
+            "text": "Exercitation et culpa nostrud laboris aliqua officia laboris sint sint.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "brand visionary technologies",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Duis Lorem labore sint magna non officia dolor laborum. Officia duis nisi aliquip duis aute ipsum dolore fugiat consequat ipsum anim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": "drive end-to-end portals",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Sint deserunt do ut. Ullamco anim Lorem duis elit eiusmod incididunt est non commodo esse cillum exercitation commodo pariatur. Ullamco sint mollit dolore elit tempor aute enim consectetur occaecat commodo.",
             "spans": []
           }
         ]

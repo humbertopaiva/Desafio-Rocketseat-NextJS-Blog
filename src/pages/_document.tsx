@@ -1,5 +1,7 @@
-import { ReactElement } from 'react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { ReactElement } from 'react';
+import Header from '../components/Header';
+import commonStyles from '../styles/common.module.scss';
 
 export default class MyDocument extends Document {
   render(): ReactElement {
@@ -14,6 +16,8 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <Header />
+
           <Main />
           <NextScript />
         </body>
